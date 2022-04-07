@@ -31,10 +31,10 @@ This repository is the batch-endpoint example by titanic-dataset.
     - select `[+ Create job]` and predict.
     ![createjob](./image/createjob.png)
     - Then follow the steps on the screen to confirm that inferences can be made.
-    // Successes Example
-    ![successexample](./image/successexample.png)
-    // Predicted Values Example
-    ![predictedvalue](./image/predict.png)
+       - // Successes Example
+         - ![successexample](./image/successexample.png)
+       - // Predicted Values Example
+         - ![predictedvalue](./image/predict.png)
 
 # Reference
 - [Install and set up the CLI (v2)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?tabs=public)
