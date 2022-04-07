@@ -17,7 +17,7 @@ This repository is the batch-endpoint example by titanic-dataset.
     ![getmodel](./image/getmodel.png)
 1. execute `get-training-automl-env.ipynb` to get the same env(`.yml`) as the model-training and save yaml file in `{your-root-dir}/env`.
 1. register AML Dataset as `titanic_test` using `{your-root-dir}/data/Titanic_score`
-    - ! NOTE: __Never create a data set in file format, not in tabular format. This is because tabular data sets are not currently supported by batch endpoints.__ 
+    - ! NOTE: __Never create a data set in TabularDataset, not in FileDataset. This is because TabularDataset is not currently supported by batch endpoints.__ 
 1. create scoring-file(`score.py`) and save this file in `{your-root-dir}/code`.
 1. create model to your AML workspace with `model.yml`
     - execute `az ml model create --subscription <Your Subscription Id> --resource-group <Resource Group> --workspace-name <Workspace> --file ./model.yml` on CMD.
