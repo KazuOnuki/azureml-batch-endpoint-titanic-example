@@ -32,16 +32,13 @@ def run(mini_batch):
   ------
   resultList: List
   '''
-  print('this is good logging')
   print(f"run method start: {__file__}, run({mini_batch})")
   resultList = []
 
   for file in mini_batch:
     df = pd.read_csv(file)
-    arr = df.to_numpy()
     print("*"*100)
-    print(df, arr)
-    print(arr.shape)
+    print(df)
     try:
       result = model.predict(df)
       print(f'result: {result}')
