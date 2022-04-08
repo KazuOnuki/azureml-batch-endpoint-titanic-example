@@ -4,8 +4,7 @@ endpoint_name: nonmlflow
 model: 
   azureml:titanic-best-model:1
 code_configuration:
-  code:
-    local_path: ./code/
+  code: ./code/
   scoring_script: score.py
 environment:
   conda_file: ./env/conda.yml
